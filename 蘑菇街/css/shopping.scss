@@ -1,0 +1,91 @@
+@charset "UTF-8";
+@function dd($num){
+	@return $num/20;
+}
+html,body{
+	width:100%;
+	position:relative;
+	background-color:#f6f6f6;
+	color:#5e5e5e;
+}
+*{
+	margin:0;
+	padding:0;
+}
+#gwc{
+	width:100%;
+	height:2rem;
+	border-bottom:dd(1rem) solid #c9c7c8;
+	background-color: #fafafa;
+	a{
+		width:10%;
+		font-size:1rem;
+		height:2rem;
+		line-height:2rem;
+		float:left;
+		text-align:center;
+		text-decoration:none;
+		color:#5e5e5e;
+	}
+	.cont{
+		width:50%;
+		font-size:.8rem;
+		height:2rem;
+		line-height:2rem;
+		margin:0 auto;
+		text-align:center;
+	}
+	.bianji{
+		width:18%;
+		position:absolute;
+		right:0;
+		top:0;
+		font-size:.5rem;
+		height:2rem;
+		line-height:2rem;
+		span{
+			
+			float:left;
+		}
+		a{
+			font-family:"iconfont";
+			font-size:.8rem;
+			margin-left:.4rem;
+		}
+	}
+}
+#kong{
+	width:100%;
+	margin:7.8rem auto 0;
+	.tu{
+		width:5.4rem;
+		height:5.4rem;
+		line-height:5.5rem;
+		font-size:3rem;
+		font-family:"iconfont";
+		background-color:#DDD5D7;
+		color:#fff;
+		border-radius:50%;
+		margin:0 auto;
+		text-align:center;
+	}
+	.aga{
+		font-size:.6rem;
+		text-align:center;
+		margin:.6rem 0;
+	}
+	.gg{
+		width:4.2rem;
+		height:1.4rem;
+		line-height:1.4rem;
+		font-size:.6rem;
+		text-align:center;
+		margin:0 auto;
+		background-color:#FF5777;
+		border-radius:.2rem;
+		a{
+			text-decoration:none;
+			color:#fff;
+		}
+	}
+}

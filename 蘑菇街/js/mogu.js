@@ -30,7 +30,7 @@ function timer(){
 	var minutes = document.querySelector("time .minutes");
 	var seconds = document.querySelector("time .seconds");
 	var mydate = new Date();
-	var youdate = new Date("2018/01/15");
+	var youdate = new Date("2018/03/15");
 	var asd = mydate.getTime();
 	var qwe = youdate.getTime();
 	var cha = qwe - asd;
@@ -56,6 +56,18 @@ function timer(){
 	seconds.innerHTML = s;	
 }	
 setInterval(timer,1000);
+//出现搜索的遮罩层---------------------------------
+var inp = document.querySelector("#search input");
+var zzsearch = document.querySelector("#zzsearch");
+var close = document.querySelector("#zzsearch .top .left");
+var inpt = document.querySelector("#zzsearch .top .center")
+inp.onclick = function(){
+	zzsearch.style.display = "block";
+	inpt.style.borderColor = "#ff0036";
+}
+close.onclick = function(){
+	zzsearch.style.display = "none";
+}
 
 
 

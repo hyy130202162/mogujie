@@ -23,6 +23,7 @@ html,body{
 		line-height:dd(39rem);
 		text-align:center;
 		color:#b0b0b0;
+		text-decoration:none;
 	}
 	.inp{
 		float:left;
@@ -54,6 +55,7 @@ html,body{
 		line-height:dd(39rem);
 		text-align:center;
 		color:#b0b0b0;
+		text-decoration:none;
 	}
 }
 #pic{
@@ -230,6 +232,7 @@ html,body{
 					margin-top:dd(10rem);
 					margin-left:dd(5rem);
 					float:left;
+					color:#000;
 				}
 				h5{
 					font-size:dd(11rem);
@@ -244,8 +247,7 @@ html,body{
 					width:32%;
 					float:right;
 					margin-top:-dd(12rem);
-				}
-				
+				}	
 			}
 			.xia{
 				width:100%;
@@ -275,7 +277,7 @@ html,body{
 		}
 	}
 	.bottom{
-		div{
+		.one,.two{
 			width:33%;
 			float:left;
 			border-right:dd(1rem) solid #f6f6f6;
@@ -297,7 +299,29 @@ html,body{
 				text-align:center;
 				color:#ff5f7e;
 			}
-		}		
+		}
+		.three{
+			width:33%;
+			float:left;
+			img{
+				width:50%;
+				margin-left:30%;
+				margin-top:dd(10rem);
+			}
+			p{
+				font-size:dd(11rem);
+				font-weight:300;
+				margin-top:dd(20rem);
+				text-align:center;
+			}
+			h5{
+				font-size:dd(11rem);
+				font-weight:300;
+				margin-top:dd(8rem);
+				text-align:center;
+				color:#ff5f7e;
+			}
+		}
 	}
 }
 #nav{
@@ -365,8 +389,10 @@ html,body{
 			width:47%;
 			margin: 0 1% dd(5rem) 2%;
 			float:left;
+			border-radius:dd(2rem);
 			img{
 				width:100%;
+				border-radius:dd(2rem);
 			}
 			div{
 				height:dd(35rem);
@@ -383,12 +409,15 @@ html,body{
 			p{
 				font-size:dd(12rem);
 				margin:0 dd(10rem);
+				font-weight:bolder;
 				span{
 					float:right;
 					color:#C5C5C5;
+					font-weight:normal;
 					i{
 						font-family:"iconfont";
 						color:#EAEAEA;
+						font-style:normal;
 					}
 				}
 			}
@@ -398,8 +427,10 @@ html,body{
 			width:47%;
 			margin: 0 1% dd(5rem) 2%;
 			float:right;
+			border-radius:dd(2rem);
 			img{
 				width:100%;
+				border-radius:dd(2rem);
 			}
 			div{
 				height:dd(35rem);
@@ -417,12 +448,15 @@ html,body{
 				font-size:dd(12rem);
 				margin:0 dd(10rem);
 				color:#333;
+				font-weight:bolder;
 				span{
+					font-weight:normal;
 					float:right;
 					color:#C5C5C5;
 					i{
 						font-family:"iconfont";
 						color:#EAEAEA;
+						font-style:normal;
 					}
 				}
 			}
@@ -437,10 +471,11 @@ html,body{
 	height:dd(40rem);
 	background-color:#fff;
 	border-top:dd(1rem) solid #f6f6f6;
-	div{
+	a{
 		width:25%;
 		float:left;
 		color:#666;
+		text-decoration:none;
 		h1{
 			font-family: "iconfont";
 			font-weight:300;
@@ -451,7 +486,118 @@ html,body{
 		p{
 			font-size:dd(10rem);
 			text-align:center;
+		}	
+	}
+}
+#zzsearch{
+	display:none;
+	width:100%;
+	height:100%;
+	background-color:#fff;
+	color:#999;
+	position:fixed;
+	left:0;
+	top:0;
+	color:#666;
+	.top{
+		width:100%;
+		height:1.8rem;
+		border-bottom:dd(1rem) solid #eee;
+		.left{
+			width:5%;
+			line-height:1.8rem;
+			font-size:1.2rem;
+			padding: 0 0.3rem;
+			float:left;
 		}
-		
+		.center{
+			width:74%;
+			height:1.2rem;
+			border:dd(1rem) solid #aaa;
+			margin:.3rem;
+			border-radius:.3rem;
+			float:left;
+			input{
+				width:90%;
+				height:0.8rem;
+				border:none;
+				outline:none;
+				font-size:.7rem;
+				margin-left:.5rem;	
+			}	
+		}
+		.right{
+			width:12%;
+			text-align:center;
+			float:right;	
+			line-height:1.8rem;
+			font-size:.7em;
+		}	
+	}
+}
+.lishi{
+	width:94%;
+	padding:3%;
+	margin:dd(10rem) auto 0;
+	border-bottom:dd(1rem) solid #f4f4f4;
+	.li{
+		margin:0 0 dd(15rem) 0;
+		font-size:.6rem;
+		height:.8rem;
+		line-height:.8rem;
+		.s{
+			font-family:"iconfont";
+		}
+		.l{
+			font-family:"iconfont";
+			float:right;
+		}
+	}
+	.shi{
+		margin:0 0 0 0.5rem;
+		font-size:.6rem;
+		height:.8rem;
+		line-height:.8rem;
+	}
+}
+.hotsearch{
+	width:94%;
+	padding:3%;
+	margin:dd(10rem) auto 0;
+	p{
+		font-size:.6rem;
+		height:.8rem;
+		line-height:.8rem;
+		strong{
+			font-family:"iconfont";
+		}
+	}
+	div{
+		display:flex;
+		flex-direction:row;
+		justify-content:flex-start;
+		align-items: center;
+		flex-wrap:wrap;
+		align-content:center;
+		a{
+			text-decoration:none;
+			height:.9rem;
+			line-height:.9rem;
+			font-size:.5rem;
+			padding:0 .5rem;
+			color:#666;
+			border:dd(1rem) solid #aaa;
+			border-radius:.3rem;
+			margin:.5rem 0 0 .8rem;
+		}
+		a:nth-child(3){
+			color:#ff0036;
+		}
+		a:nth-child(6){
+			color:#ff0036;
+		}
+		a:nth-child(8){
+			color:#ff0036;
+		}
 	}
 }
