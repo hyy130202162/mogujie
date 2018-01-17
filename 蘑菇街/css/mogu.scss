@@ -196,25 +196,25 @@ html,body{
 		height:dd(145rem);
 		border-bottom:dd(1rem) solid #f6f6f6;
 		.left{
-			width:49%;
+			width:49.5%;
 			height:100%;
 			float:left;
 			border-right:dd(1rem) solid #f6f6f6;
 			img{
-				width:50%;
-				margin-left:30%;
-				margin-top:dd(10rem);
+				width:55%;
+				margin-left:25%;
+				/*margin-top:dd(10rem);*/
 			}
 			p{
 				font-size:dd(11rem);
 				font-weight:300;
-				margin-top:dd(20rem);
+				margin-top:dd(27rem);
 				text-align:center;
 			}
 			h5{
 				font-size:dd(11rem);
 				font-weight:300;
-				margin-top:dd(8rem);
+				margin-top:dd(5rem);
 				text-align:center;
 				color:#ff5f7e;
 			}
@@ -224,13 +224,11 @@ html,body{
 			width:50%;
 			.shang{
 				width:100%;
-				height:50%;
-				
 				height:dd(72rem);
 				p{
 					font-size:dd(11rem);
 					font-weight:300;
-					margin-top:dd(10rem);
+					margin-top:dd(24rem);
 					margin-left:dd(5rem);
 					float:left;
 					color:#000;
@@ -256,7 +254,7 @@ html,body{
 				p{
 					font-size:dd(11rem);
 					font-weight:300;
-					margin-top:dd(10rem);
+					margin-top:dd(24rem);
 					margin-left:dd(5rem);
 					float:left;
 				}
@@ -277,7 +275,9 @@ html,body{
 		}
 	}
 	.bottom{
-		.one,.two{
+		width:100%;
+		clear:both;
+		div{
 			width:33%;
 			float:left;
 			border-right:dd(1rem) solid #f6f6f6;
@@ -301,26 +301,7 @@ html,body{
 			}
 		}
 		.three{
-			width:33%;
-			float:left;
-			img{
-				width:50%;
-				margin-left:30%;
-				margin-top:dd(10rem);
-			}
-			p{
-				font-size:dd(11rem);
-				font-weight:300;
-				margin-top:dd(20rem);
-				text-align:center;
-			}
-			h5{
-				font-size:dd(11rem);
-				font-weight:300;
-				margin-top:dd(8rem);
-				text-align:center;
-				color:#ff5f7e;
-			}
+			border:none;
 		}
 	}
 }
