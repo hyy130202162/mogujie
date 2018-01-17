@@ -197,6 +197,7 @@ html,body{
 		border-bottom:dd(1rem) solid #f6f6f6;
 		.left{
 			width:49%;
+			height:100%;
 			float:left;
 			border-right:dd(1rem) solid #f6f6f6;
 			img{
@@ -223,9 +224,9 @@ html,body{
 			width:50%;
 			.shang{
 				width:100%;
-				border-bottom:dd(1rem) solid #f6f6f6;
+				height:50%;
+				
 				height:dd(72rem);
-				overflow:hidden;
 				p{
 					font-size:dd(11rem);
 					font-weight:300;
@@ -244,15 +245,14 @@ html,body{
 					margin-left:dd(5rem);
 				}
 				img{
-					width:32%;
-					float:right;
-					margin-top:-dd(12rem);
+					width:43%;
+					margin-left:1rem;
 				}	
 			}
 			.xia{
 				width:100%;
+				border-top:dd(1rem) solid #f6f6f6;
 				height:dd(72rem);
-				overflow:hidden;
 				p{
 					font-size:dd(11rem);
 					font-weight:300;
@@ -270,8 +270,8 @@ html,body{
 					margin-left:dd(5rem);
 				}
 				img{
-					width:32%;
-					float:right;
+					width:43%;
+					margin-left:1.4rem;
 				}	
 			}			
 		}
