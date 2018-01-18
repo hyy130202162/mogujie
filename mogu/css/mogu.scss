@@ -229,6 +229,7 @@ a{
 			.shang{
 				width:100%;
 				height:dd(72rem);
+				position:relative;
 				display:block;
 				p{
 					font-size:dd(11rem);
@@ -249,7 +250,10 @@ a{
 				}
 				img{
 					width:43%;
-					margin-left:1rem;
+					/*margin-left:1rem;*/
+					position:absolute;
+					right:0;
+					top:0;
 				}	
 			}
 			.xia{
@@ -274,7 +278,7 @@ a{
 				}
 				img{
 					width:40%;
-					margin-left:1.4rem;
+					margin-left:1.69rem;
 				}	
 			}			
 		}

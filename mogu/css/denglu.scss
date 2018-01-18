@@ -17,7 +17,8 @@ html,body{
 	margin:0 auto;
 	h1{
 		margin: 3.2rem 0 2.5rem;
-	    text-align: center;
+	    /*text-align: center;*/
+	    padding-left:41%;
 	    font-size:1.2rem;
 	    font-weight: 500;
 	    color: #444;
@@ -56,17 +57,18 @@ html,body{
 			display:flex;
 			flex-direction:row;
 			justify-content:space-between;
-			text-align:center;
+			
 			margin:2rem 0;
 			a{
 				text-decoration:none;
 				width:23%;
 				img{
 					width:2rem;
-					margin:.3rem .54rem;
+					margin-left:.5rem;
 				}
 				p{
 					margin:0.5rem 0 0;
+					text-align:center;
 				}
 			}
 		}
