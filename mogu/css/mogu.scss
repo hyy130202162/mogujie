@@ -11,6 +11,9 @@ html,body{
 	margin:0;
 	padding:0;
 }
+a{
+	text-decoration:none;
+}
 #search{
 	width:100%;
 	height:dd(39rem);
@@ -225,6 +228,7 @@ html,body{
 			.shang{
 				width:100%;
 				height:dd(72rem);
+				display:block;
 				p{
 					font-size:dd(11rem);
 					font-weight:300;
@@ -268,7 +272,7 @@ html,body{
 					margin-left:dd(5rem);
 				}
 				img{
-					width:43%;
+					width:40%;
 					margin-left:1.4rem;
 				}	
 			}			
@@ -364,11 +368,11 @@ html,body{
 	}
 	.row{
 		width:100%;
-		height:dd(260rem);
+		height:dd(270rem);
 		.left{
 			background-color:#fff;
 			width:47%;
-			margin: 0 1% dd(5rem) 2%;
+			margin: .3rem 1% dd(5rem) 2%;
 			float:left;
 			border-radius:dd(2rem);
 			img{
@@ -380,24 +384,40 @@ html,body{
 				margin-left:dd(5rem);
 				span{
 					background-color:#EFF3F6;
-					font-size:dd(12rem);
+					font-size:dd(10rem);
 					float:left;
-					margin-left:dd(2rem);
-					margin-bottom:dd(2rem);
+					margin-left:dd(3rem);
+					margin-bottom:dd(3rem);
 					color: #5A6F7A;
+				}
+				.col{
+					background-color:#FF743C;
+					color:#fff;
 				}
 			}
 			p{
-				font-size:dd(12rem);
-				margin:0 dd(10rem);
+				font-size:dd(14rem);
+				margin:0 dd(6rem) dd(2rem);
 				font-weight:bolder;
+				color:#333;
+				strong{
+					background:url(https://s10.mogucdn.com/mlcdn/c45406/171106_4e2g2ib7a4gl05hd24k379g74fhlf_52x28.png) no-repeat 100% 100%;
+					color:#fff;
+					width:1rem;
+					height:.6rem;
+					font-weight:normal;
+					font-size:dd(12rem);
+					display:block;
+					float:left;
+				}
 				span{
 					float:right;
 					color:#C5C5C5;
+					font-size:dd(12rem);
 					font-weight:normal;
 					i{
 						font-family:"iconfont";
-						color:#EAEAEA;
+						color:#C5C5C5;
 						font-style:normal;
 					}
 				}
@@ -406,7 +426,7 @@ html,body{
 		.right{
 			background-color:#fff;
 			width:47%;
-			margin: 0 1% dd(5rem) 2%;
+			margin: .3rem 1% dd(5rem) 2%;
 			float:right;
 			border-radius:dd(2rem);
 			img{
@@ -418,25 +438,40 @@ html,body{
 				margin-left:dd(5rem);
 				span{
 					background-color: #EFF3F6;
-					font-size:dd(12rem);
+					font-size:dd(10rem);
 					float:left;
-					margin-left:dd(2rem);
-					margin-bottom:dd(2rem);
+					margin-left:dd(3rem);
+					margin-bottom:dd(3rem);
 					color: #5A6F7A;
+				}
+				.col{
+					background-color:#FF743C;
+					color:#fff;
 				}
 			}
 			p{
-				font-size:dd(12rem);
-				margin:0 dd(10rem);
+				font-size:dd(14rem);
+				margin:0 dd(10rem) dd(2rem);
 				color:#333;
 				font-weight:bolder;
+				strong{
+					background:url(https://s10.mogucdn.com/mlcdn/c45406/171106_4e2g2ib7a4gl05hd24k379g74fhlf_52x28.png) no-repeat 100% 100%;
+					color:#fff;
+					width:1rem;
+					height:.6rem;
+					font-weight:normal;
+					font-size:dd(12rem);
+					display:block;
+					float:left;
+				}
 				span{
+					font-size:dd(12rem);
 					font-weight:normal;
 					float:right;
 					color:#C5C5C5;
 					i{
 						font-family:"iconfont";
-						color:#EAEAEA;
+						color:#C5C5C5;
 						font-style:normal;
 					}
 				}
@@ -457,16 +492,15 @@ html,body{
 		float:left;
 		color:#666;
 		text-decoration:none;
+		text-align:center;
 		h1{
 			font-family: "iconfont";
 			font-weight:300;
 			font-size:dd(20rem);
-			margin:dd(5rem) 0 0 0 ;
-			text-align:center;
+			margin:dd(5rem) auto 0 ;
 		}
 		p{
 			font-size:dd(10rem);
-			text-align:center;
 		}	
 	}
 }
@@ -487,9 +521,10 @@ html,body{
 		.left{
 			width:5%;
 			line-height:1.8rem;
-			font-size:1.2rem;
+			font-size:1frem;
 			padding: 0 0.3rem;
 			float:left;
+			font-family:"iconfont";
 		}
 		.center{
 			width:74%;

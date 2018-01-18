@@ -30,11 +30,10 @@ html,body{
 		border-radius:1rem;
 		background-color: rgb(9, 187, 7);
 		color:#fff;
-		text-align:center;
 		font-size:0.8rem;
 		img{
 			width:1rem;
-			margin-right:.5rem;
+			margin:.6rem .4rem 0 4rem;
 		}
 	}
 	.login-other{
@@ -61,8 +60,10 @@ html,body{
 			margin:2rem 0;
 			a{
 				text-decoration:none;
+				width:23%;
 				img{
 					width:2rem;
+					margin:.3rem .54rem;
 				}
 				p{
 					margin:0.5rem 0 0;
@@ -185,6 +186,7 @@ html,body{
 		text-align:center;
 		text-decoration:none;
 		color:#5e5e5e;
+		font-family:"iconfont";
 	}
 	div{
 		width:70%;
