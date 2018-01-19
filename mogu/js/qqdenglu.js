@@ -16,18 +16,30 @@ con.onclick = function(){
 		lose[i].style.display = "none";
 	}	
 }
-// QQ登录页的正则条件------------------------------------------------
+//-----------------------------------------
+var clear1 = document.querySelector(".qqaspa1");
+var clear2 = document.querySelector(".qqaspa2");
 var qqinp1 = document.querySelector(".qqinp1");
 var qqinp2 = document.querySelector(".qqinp2");
 var qqgo = document.querySelector(".go");
-// qqinp1.onfocus = function(){
-// 	var ann = document.createElement('button');
-// 	ann.innerHTML = "X"
-// 	qqinp1.value = "";
-// 	qqinp1.appendChild(ann);
-// 	ann.style = "float:right;"
-// }        
-qqinp1.onblur = function(){    
+//---------QQ登录页中登录框内容的清除按钮-----------------------------
+qqinp1.onfocus = function(){
+    clear1.innerHTML = "x";  
+}
+qqinp2.onfocus = function(){
+    clear2.innerHTML = "x"; 
+}
+//清除搜索框中的内容------------------------------
+clear1.onclick = function(){
+    qqinp1.value = "";
+    clear1.innerHTML = "";
+}
+clear2.onclick = function(){
+    qqinp2.value = ""; 
+    clear2.innerHTML = "";   
+}
+// QQ登录页的正则条件------------------------------------------------
+qqinp1.onblur = function(){
     var str1 = qqinp1.value.trim();    
     if(str1.length==0){    
         alert('你还没有输入账号');
@@ -44,20 +56,10 @@ qqinp1.onblur = function(){
         }
     }
 }
-qqinp2.onblur = function(){    
+qqinp2.onblur = function(){
     var str2 = qqinp2.value;    
     if(str2.length==0){    
         alert('你还没有输入密码');
     }        
-}
-
-//免密登录-------------------------------------------------------------
-var mmsjh = document.querySelector(".mmsjh");
-var yz = document.querySelector(".yz");
-yz.onclick = function(){
-	var qwe =/^\d{11}$/;
-	if(!qwe.test(mmsjh.value)){
-		alert("请写入正确的手机号");
-	}
 }
 

@@ -68,6 +68,29 @@ inp.onclick = function(){
 close.onclick = function(){
 	zzsearch.style.display = "none";
 }
+//----搜索框中的内容进入搜索历史------------------------------
+var search = document.querySelector("#zzsearch .right");
+var inpsearch = document.querySelector("#zzsearch .center input");
+var lishisearch = document.querySelector(".lishi");
+var psearch = document.querySelector(".shi");
+var clear = document.querySelector(".l");
+search.onclick = function(){
+	var spa = document.createElement("a");
+	spa.style="overflow:wrap;font-style:normal;height: .9rem;line-height: .9rem;font-size: .5rem;padding: .1rem .5rem;color: #666;border: 0.05rem solid #aaa; border-radius: .3rem;margin: .5rem 0 0 .5rem;"
+	if(inpsearch.value!=""){
+		psearch.style.display = "none";
+		lishisearch.appendChild(spa);
+		spa.innerHTML=inpsearch.value;
+		inpsearch.value = "";
+	}	
+}
+clear.onclick = function(){
+	var aspa =document.querySelectorAll(".lishi a");
+	for(var b = 0;b<aspa.length;b++){
+		aspa[b].remove(lishisearch);
+	}
+	psearch.style.display = "block";
+}
 
 
 

@@ -99,15 +99,19 @@ html,body{
 #qqcontent{
 	width:86%;
 	margin:0 auto;
-	.text{
+	.text1,.text2{
 		width:100%;
 		border-bottom:dd(1rem) solid #ddd;
 		input{
-			width:100%;
+			width:90%;
 			font-size:.98rem;
 			border:none;
 			outline:none;
 			margin:.7rem 0;
+		}
+		span{
+			float:right;
+			margin:.7rem .3rem .7rem 0;
 		}
 	}
 	.go{
@@ -210,10 +214,37 @@ html,body{
 		border-bottom:dd(1rem) solid #ddd;
 		color:#333;
 		input{
+			width:87%;
 			border:none;
 			outline:none;
 			margin-left:.5rem;
 			font-size:.8rem;	
+		}
+		span{
+			float:right;
+			margin:0.36rem .34rem 0 0;
+			font-family:"iconfont";
+			font-size:.6rem;
+		}
+	}
+	.zhmm{
+		width:100%;
+		padding:.6rem 0;
+		height:1rem;
+		border-bottom:dd(1rem) solid #ddd;
+		color:#333;
+		input{
+			width:87%;
+			border:none;
+			outline:none;
+			margin-left:.5rem;
+			font-size:.8rem;	
+		}
+		span{
+			float:right;
+			margin:0.36rem .34rem 0 0;
+			font-family:"iconfont";
+			font-size:.6rem;
 		}
 	}
 	.yzm{
