@@ -18,6 +18,7 @@ a{
 	margin:0 auto;
 	p{
 		background:url(.././img/log.png) no-repeat center center;
+		background-size:50%;
 		height:1.4rem;
 		line-height:1.4rem;
 		font-size:.6rem;
@@ -56,6 +57,7 @@ a{
 	background-color: #f6f6f6;
 	p{
 		background:url(.././img/log.png) no-repeat center center;
+		background-size: 50%;
 		height:1.4rem;
 		line-height:1.4rem;
 		font-size:.6rem;
@@ -218,7 +220,8 @@ a{
 				font-weight:bolder;
 				color:#333;
 				strong{
-					background:url(https://s10.mogucdn.com/mlcdn/c45406/171106_4e2g2ib7a4gl05hd24k379g74fhlf_52x28.png) no-repeat 100% 100%;
+					background:url(https://s10.mogucdn.com/mlcdn/c45406/171106_4e2g2ib7a4gl05hd24k379g74fhlf_52x28.png) no-repeat center center;
+					background-size:1rem .6rem;
 					color:#fff;
 					width:1rem;
 					height:.6rem;
@@ -272,7 +275,8 @@ a{
 				color:#333;
 				font-weight:bolder;
 				strong{
-					background:url(https://s10.mogucdn.com/mlcdn/c45406/171106_4e2g2ib7a4gl05hd24k379g74fhlf_52x28.png) no-repeat 100% 100%;
+					background:url(https://s10.mogucdn.com/mlcdn/c45406/171106_4e2g2ib7a4gl05hd24k379g74fhlf_52x28.png) no-repeat center center;
+					background-size:1rem .6rem;
 					color:#fff;
 					width:1rem;
 					height:.6rem;
