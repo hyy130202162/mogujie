@@ -60,17 +60,22 @@ setInterval(timer,1000);
 var inp = document.querySelector("#search input");
 var zzsearch = document.querySelector("#zzsearch");
 var close = document.querySelector("#zzsearch .top .left");
-var inpt = document.querySelector("#zzsearch .top .center")
+var inpt = document.querySelector("#zzsearch .top .center");
+var inpsearch = document.querySelector("#zzsearch .center input");
 inp.onclick = function(){
 	zzsearch.style.display = "block";
-	inpt.style.borderColor = "#ff0036";
 }
 close.onclick = function(){
 	zzsearch.style.display = "none";
 }
+inpsearch.onfocus = function(){
+	inpt.style.borderColor = "#ff0036";
+}
+inpsearch.onblur = function(){
+	inpt.style.borderColor = "#ccc";
+}
 //----搜索框中的内容进入搜索历史------------------------------
 var search = document.querySelector("#zzsearch .right");
-var inpsearch = document.querySelector("#zzsearch .center input");
 var lishisearch = document.querySelector(".lishi");
 var psearch = document.querySelector(".shi");
 var clear = document.querySelector(".l");
@@ -91,6 +96,7 @@ clear.onclick = function(){
 	}
 	psearch.style.display = "block";
 }
+// ---------------------------------------
 
 
 
