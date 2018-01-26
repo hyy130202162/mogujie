@@ -16,21 +16,23 @@ a{
 }
 #toppic{
 	width:100%;
-
-	img{
-		width:100%;
-	}
-	.po{
-		height: 1rem;
-    	line-height: 1rem;
-    	font-size: .5rem;
-    	background: rgba(0,0,0,0.3);
-    	color: #fff;
-    	padding: 0px .5rem;
-    	border-radius: .5rem;
-    	position: absolute;
-    	right: 1rem;
-    	top: 28rem;
+	.pico{
+		position:relative;
+		img{
+			width:100%;
+		}
+		.po{
+			height: 1rem;
+	    	line-height: 1rem;
+	    	font-size: .5rem;
+	    	background: rgba(0,0,0,0.3);
+	    	color: #fff;
+	    	padding: 0px .5rem;
+	    	border-radius: .5rem;
+	    	position: absolute;
+	    	right: 1rem;
+	    	bottom:1rem;
+		}
 	}
 	.title{
 		width: 90%;
@@ -91,7 +93,6 @@ a{
 		div{
 			width:31%;
 			img{
-				width: 13%;
     			height: 1rem;
     			position: relative;
     			top: 3px;
@@ -520,7 +521,6 @@ a{
 	    	font-size:1rem;
 	    }
 	}
-
 }
 #zz{
 	width: 100%;
