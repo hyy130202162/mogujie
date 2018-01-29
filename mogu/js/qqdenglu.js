@@ -43,15 +43,17 @@ qqinp1.onblur = function(){
     var str1 = qqinp1.value.trim();    
     if(str1.length==0){    
         alert('你还没有输入账号');
+        clear1.innerHTML = "";
     } else{
-    	var reg=/^[a-zA-Z0-9_]+$/;
-    	var was=/^[0-9_]+$/;   
+    	var reg=/^[a-zA-Z0-9_]$/;
+    	var was=/^\d{11}$/;   
         if(!reg.test(str1)){
         	alert("请输入正确的账号");
+            qqinp1.value = "";
+            clear1.innerHTML = "";
         }
          if(!was.test(str1)){
         	str1+="@qq.com";
-        	console.log(str1);
         	qqinp1.value = str1;
         }
     }
@@ -60,6 +62,7 @@ qqinp2.onblur = function(){
     var str2 = qqinp2.value;    
     if(str2.length==0){    
         alert('你还没有输入密码');
+        clear2.innerHTML = ""; 
     }        
 }
 
